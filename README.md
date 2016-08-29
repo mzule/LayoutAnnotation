@@ -1,7 +1,7 @@
-# 功能
+## 功能
 一个支持 @Layout 指定布局的库，支持在任意 class 上使用。
 
-# 集成
+## 集成
 
 ``` groovy
 buildscript {
@@ -19,7 +19,7 @@ dependencies {
 }
 ```
 
-# 使用
+## 使用
 
 ``` java
 @Layout(R.layout.activity_main)
@@ -55,7 +55,7 @@ public class BaseActivity extends Activity {
 }
 ```
 
-# 混淆配置
+## 混淆配置
 
 ``` groovy
 -keep class com.github.mzule.layoutannotation.** { *; }

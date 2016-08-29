@@ -1,0 +1,34 @@
+apply plugin: 'java'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'layout-annotation-compiler'
+
+    publishedGroupId = 'com.github.mzule.layoutannotation'
+    libraryName = 'LayoutAnnotation'
+    artifact = 'compiler'
+
+    libraryDescription = 'Layout via Annotation'
+
+    siteUrl = 'https://github.com/mzule/LayoutAnnotation/'
+    gitUrl = 'https://github.com/mzule/LayoutAnnotation.git'
+
+    libraryVersion = '1.0.3'
+
+    developerId = 'mzule'
+    developerName = 'Cao Dongping'
+    developerEmail = 'mzule4j@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+dependencies {
+    compile 'com.github.mzule.layoutannotation:annotation:1.0.0'
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    compile 'com.squareup:javapoet:1.6.1'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

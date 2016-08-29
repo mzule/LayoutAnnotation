@@ -1,0 +1,32 @@
+apply plugin: 'java'
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'layout-annotation-annotation'
+
+    publishedGroupId = 'com.github.mzule.layoutannotation'
+    libraryName = 'LayoutAnnotationAnnotation'
+    artifact = 'annotation'
+
+    libraryDescription = 'Layout via Annotation'
+
+    siteUrl = 'https://github.com/mzule/LayoutAnnotation/'
+    gitUrl = 'https://github.com/mzule/LayoutAnnotation.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'mzule'
+    developerName = 'Cao Dongping'
+    developerEmail = 'mzule4j@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
